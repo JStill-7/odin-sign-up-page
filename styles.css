@@ -1,0 +1,314 @@
+/* css reset */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+
+#container {
+    /* border: 2px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#img-title {
+    font-family: norse;
+   
+}
+
+#side-bar {
+    /* border: 2px solid rgb(29, 150, 81); */
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#plant-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#plant-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#credit {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+a {
+    color: aliceblue;
+}
+
+#odin-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid gold; */
+    z-index: 2; /* Ensure it sits above the image */
+}
+
+#img-background {
+    background-color: rgba(19, 20, 19, 0.828);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: 190px;
+}
+
+#odin-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+#img-title {
+    color: aliceblue;
+    font-size: 72px;
+    margin: 0;
+}
+
+
+#sign-up-section {
+    height: 100%;
+    width: 65%;
+    /* border: 1px solid magenta;   */
+    
+}
+
+#intro {
+    font-size: 24px;
+    margin: 40px;
+    margin-top: 200px;
+}
+
+b{
+    padding-bottom: 30px;
+}
+
+#row1{
+    /* border: 2px solid seagreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 475px;
+
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 475px;
+}
+
+#row3 {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 475px;
+
+}
+
+#name-stack {
+    /* border: 2px solid cyan; */
+    display: flex;
+    flex-direction: column;
+    margin: 28px;
+    width: 250px;
+}
+
+label {
+    font-size: 22px;
+}
+
+#row-stack {
+    /* border: 2px solid rgb(89, 29, 23); */
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#button-container {
+    /* border: 2px solid black; */
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 250px; */
+    width: 400px;
+    margin-left: 100px;
+    
+   
+
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-size: 22px;
+    padding-top:10px;
+    padding-bottom:10px ;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 10px;
+    border: none;
+   
+    
+}
+
+#button-text-below {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+#green-text {
+    display: inline-block;
+    color: #596D48;
+    font-weight: 500;
+}
+
+form{
+    font-size: 24px;
+    box-shadow: 2px 5px 5px grey;
+}
+
+
+
+
+/* 
+#name-stack-row {
+    border: 2px solid rgb(5, 80, 80);
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+#name-stack {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+
+#email-stack {
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+
+#password-stack {
+    border: 2px solid rgb(102, 97, 135);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+ */
+
+
+/* 
+ #container {
+    display: flex;
+    flex-direction: row;
+}
+
+#plant-img {
+      max-width: 100%;
+      height: auto;
+      
+}
+
+#img-background {
+    position: absolute;
+    background-color: rgba(19, 20, 19, 0.828);
+    border: 1px solid rgb(98, 17, 79);
+    display: flex;
+    flex-direction: row;
+    width: 627px;
+    height: 190px;
+   
+}
+
+#img-title{
+    color: aliceblue;
+    font-size: 42px;
+}
+
+#odin-logo {
+    max-width: 100%;
+    height: auto;
+} 
+
+a {
+    color: aliceblue;
+}
+
+#credit {
+    border: 1px solid magenta;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: aliceblue;
+    position: absolute;
+    height: 100vh;
+    width: 627px;
+    padding-bottom: 8px;
+
+}
+
+#side-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 2px solid black;
+    height: 100vh;
+}
+
+#idk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sign-up-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 2px solid blue;
+    height: 100vh;
+} */
